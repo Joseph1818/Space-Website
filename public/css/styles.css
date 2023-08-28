@@ -7,6 +7,9 @@ body {
 .destinationBody {
   background-image: url("/public/images/assets/destination/background-destination-desktop.jpg");
 }
+.crewBody {
+  background-image: url(/public/images/assets/crew/background-crew-desktop.jpg);
+}
 
 .homeMainDiv {
   position: absolute;
@@ -99,8 +102,8 @@ li a:hover {
 }
 .pickYourDestinationDiv {
   position: relative;
-
   text-align: center;
+  height: 500px;
 }
 .marsImg {
   position: relative;
@@ -182,7 +185,108 @@ span {
   bottom: 100px;
 }
 .estimatedTravelTimeValue {
-    left: 100px;
-  bottom:134px;
+  left: 100px;
+  bottom: 134px;
   position: relative;
+}
+.flightCrewMainDiv {
+  width: 400px;
+  height: 300px;
+  margin-right: 0;
+  padding: 0%;
+  position: relative;
+  left: 165px;
+  top: 50px;
+}
+
+.flightCrewTitle {
+  opacity: 70%;
+  font-size: large;
+}
+.flightCrewName {
+  font-size: 40px;
+  position: relative;
+  bottom: 10px;
+  text-transform: uppercase;
+}
+.flightCrewDescription {
+  position: relative;
+  bottom: 25px;
+  opacity: 70%;
+  font-size: 20px;
+}
+.flightCrewImg {
+  position: relative;
+  left: 600px;
+  bottom: 305px;
+  width: 500px;
+  height: 500px;
+  margin: 0;
+  padding: 0;
+}
+
+.dotstyle {
+  position: relative;
+  right: 410px;
+  bottom: 80px;
+}
+.dotstyle ul {
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  cursor: default;
+  backdrop-filter: blur(0px);
+}
+
+.dotstyle li {
+  position: relative;
+  display: block;
+  float: left;
+  margin: 0 16px;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.dotstyle li a {
+  top: 0;
+  left: 0;
+  width: 5%;
+  height: 5%;
+  outline: none;
+  border-radius: 50%;
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.3);
+  text-indent: -999em;
+  cursor: pointer; /* make the text accessible to screen readers */
+  position: absolute;
+}
+/* Fill up */
+
+.dotstyle-fillup li a {
+  overflow: hidden;
+
+  transition: 0.3s;
+}
+
+.dotstyle-fillup li a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 0 1px #fff;
+  transition: height 0.3s;
+}
+
+.dotstyle-fillup li a:hover,
+.dotstyle-fillup li a:focus {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.dotstyle-fillup li.current a::after {
+  height: 100%;
 }
