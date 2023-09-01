@@ -11,6 +11,10 @@ body {
   background-image: url(/public/images/assets/crew/background-crew-desktop.jpg);
 }
 
+.terminologBody {
+  background-image: url(/public/images/assets/technology/background-technology-desktop.jpg);
+}
+
 .homeMainDiv {
   position: absolute;
 }
@@ -31,10 +35,14 @@ ul {
   top: 40px;
   left: 50px;
 }
-li {
+.mainNav li {
   float: right;
   transition-duration: 5s;
 }
+/* li {
+  float: right;
+  transition-duration: 5s;
+} */
 li a {
   position: relative;
   top: 10px;
@@ -124,7 +132,7 @@ span {
   font-size: small;
   bottom: 500px;
   list-style-type: none;
-  width: 320px;
+  width: 300px;
   text-align: center;
   height: 60px;
   overflow: hidden;
@@ -133,6 +141,10 @@ span {
   backdrop-filter: blur(1px);
   opacity: 70%;
 }
+.distinationPlanetDiv li {
+  float: left;
+}
+
 .planetA:hover {
   text-decoration: underline;
   text-underline-offset: 15px;
@@ -267,7 +279,6 @@ span {
 
 .dotstyle-fillup li a {
   overflow: hidden;
-
   transition: 0.3s;
 }
 
@@ -289,4 +300,67 @@ span {
 }
 .dotstyle-fillup li.current a::after {
   height: 100%;
+}
+
+.dotsStyNavleNumber {
+  position: relative;
+  right: 500px;
+  top: 70px;
+}
+.dotsStyNavleNumber ul {
+  position: relative;
+  height: 300px;
+  display: block;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  cursor: default;
+  backdrop-filter: blur(0px);
+}
+
+.dotsStyNavleNumber li {
+  cursor: pointer;
+}
+
+.dotsStyNavleNumber li a {
+  top: 0;
+  left: 0;
+  width: 3%;
+  height: 20px;
+  margin: 20px;
+  outline: none;
+  border-radius: 50%;
+  background-color: #fff;
+  border-color: white;
+  background-color: rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+}
+.dotsStyNavleNumber li a:hover {
+  text-decoration: none;
+}
+
+/* Fill up */
+
+.dotstyle-fillupNavNumber li a {
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.dotstyle-fillupNavNumber li a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 0;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 0 1px #fff;
+  transition: height 0.3s;
+}
+.dotstyle-fillupNavNumber a::after {
+  height: 100%; 
+
+}
+.spanLaunchTitle{
+  position: relative;
+  right: 45px;
 }
