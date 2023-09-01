@@ -11,8 +11,9 @@ body {
   background-image: url(/public/images/assets/crew/background-crew-desktop.jpg);
 }
 
-.terminologBody {
+.technologyBody {
   background-image: url(/public/images/assets/technology/background-technology-desktop.jpg);
+  height: 100vh;
 }
 
 .homeMainDiv {
@@ -357,10 +358,42 @@ span {
   transition: height 0.3s;
 }
 .dotstyle-fillupNavNumber a::after {
-  height: 100%; 
-
+  height: 100%;
 }
-.spanLaunchTitle{
+.spanLaunchTitle {
   position: relative;
   right: 45px;
+}
+
+.technologyMainDiv {
+  position: relative;
+  left: 350px;
+  bottom: 430px;
+  width: 400px;
+  height: 300px;
+  margin: 0;
+  padding: 0%;
+}
+.technologyTitle {
+  opacity: 70%;
+  font-size: large;
+}
+.technologyEngineName {
+  font-size: 40px;
+  position: relative;
+  bottom: 10px;
+  text-transform: uppercase;
+}
+.technologyEngineDescription {
+  position: relative;
+  bottom: 25px;
+  opacity: 70%;
+  font-size: 20px;
+}
+.technologyImg {
+  position: relative;
+  left: 1018px;
+  bottom: 690px;
+  width: 400px;
+  height: 350px;
 }
